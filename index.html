@@ -1,0 +1,152 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>NETFLIX</title>
+    <style>
+      #container {
+        width: 1500px;
+        margin: 0 auto;
+        background-color: rgb(114, 75, 109);
+      }
+      h2 { color: pink; font-size: 3em; margin-top: 5px; margin-left: 30px; margin-bottom: 20px;}
+      h3 { color: white; padding-left: 30px; font-size: 1.5em; font-weight: bold;}
+      header { 
+        width: 1480px; height: 70px;
+        padding: 10px;
+        background-color: lightcoral;
+      }
+      
+      header ul { text-align: right;}
+      header ul li {
+        display: inline-block;
+        width: 120px; height: 20px;
+        padding: 5px 10px; margin: 5px 5px 5px 5px;
+        text-align: center;
+      }
+      header ul li:last-child {margin-right: 100px;}
+      header ul li a { text-decoration: none; color: rgb(114, 75, 109); font-weight:bold;font-size: 25px;}
+      header ul li a:hover { color: blueviolet;}
+      header ul li a:active { color: orange;}
+      
+      article:first-of-type {
+        width: 98%; height: 600;
+        border: 5px solid rgb(207, 111, 130); padding: 10px;
+      }
+      article:last-of-type {
+        width: 1480px; height: 950px;padding: 10px;
+        background-color: lightpink;
+        clear: both;
+      }
+      article section {
+        float: left;
+        width: 22%; height: 78%;
+        padding : 5px;
+        border: 4px solid rgb(228, 162, 154);
+        background-color: mistyrose;
+        transition: all 1s 0s ease-in-out;
+      }
+      
+      #s1 { background: url("images/eva.jpg") no-repeat center/150%; margin-left: 30px;}
+      #s2 { background: url("images/sailor.jpg") no-repeat center/100%;}
+      #s3 { background: url("images/sakura.jpg") no-repeat center/105%}
+      #s4 { width: 225px; height: 75px; background-color: lightcoral; margin-right: 80px; margin-top: 0px;float: right;}
+
+      #s1:hover {opacity: 0.5;background: url("images/eva.jpg") no-repeat center/160%; margin-left: 30px;}
+      #s2:hover {opacity: 0.5;background: url("images/sailor.jpg") no-repeat center/110%;}
+      #s3:hover {opacity: 0.5;background: url("images/sakura.jpg") no-repeat center/110%}
+      section dt {
+        text-align: justify;
+      }
+      #s4 > h3 { margin-top: 5px; margin-bottom : 5px; padding: 0%; color: black; font-weight: 1000;}
+      #log1 {margin-left: 1142px; margin-top: 40px;}
+      #log2 {margin-left: 1230px;}
+      #log3 {margin-left: 1169;}
+      #log4 {margin-left: 78%; font-size: 30px; color: rgb(207, 111, 130);}
+      #hs2 { margin-top : 30px; margin-bottom: 30px;margin-left: 30px;color: rgb(114, 75, 109);}
+      #lin1 {float: right; margin-right: 9px; margin-top: 8px;}
+
+      span {color: white;}
+
+      #s5>h3 {color : wheat; margin-left: 0px;margin-top: 2;margin-bottom: 5;font-weight: bold;font-size: 2em; background-color:indianred;}
+      #s6>h3 {color : wheat; margin-left: 0px;margin-top: 2;margin-bottom: 5;font-weight: bold;font-size: 2em; background-color:indianred;}
+      #s7>h3 {color : wheat; margin-left: 0px;margin-top: 2;margin-bottom: 5;font-weight: bold;font-size: 2em; background-color:indianred;}
+
+      #s5>img:hover {opacity: 0.5;}
+      #s6>img:hover {opacity: 0.5;}
+      #s7>img:hover {opacity: 0.5;}
+
+      #s5 {margin-left: 30px;}
+      input[type="text"] {background-color: rgb(253, 207, 215);}
+      input[type="password"] {background-color: rgb(253, 207, 215);}
+      
+
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Animation</a></li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">My List</a></li>
+          </ul>
+        </nav>
+      </header>
+      <article>
+        <h2>오늘의 추천작</h2>
+        <section id="s1">
+          <h3>에반게리온 신극장판</h3>
+        </section>
+        <section id="s2">
+          <h3>세일러문</h3>
+        </section>
+        <section id="s3">
+          <h3>카드캡터 체리</h3>
+        </section>
+        <h2 id="log1">WELCOME</h2>
+        <h2 id="log2">TO</h2>
+        <h2 id="log3">NETFLIX</h2>
+        <h2 id="log4">Let's Join</h2>
+        <section id="s4">
+          <form action="" method="post">
+            <span>ID : </span><input type="text" name="userId" size="22" placeholder="아이디 입력" id="i1"><br>
+            <span>PWD : </span><input type="password" name="pwd" size="19" maxlength="15" placeholder="비밀번호 입력" id="i2"><br>
+            <input type="submit" value="join"id="lin1">
+          </form>
+        </section>
+      </article>
+      <article>
+        <h2 id="hs2">NEW MOVIES - 신작 영화</h2>
+        <section id="s5" style="height:81%;">
+          <h3>바다가 들린다</h3>
+          <img src="images/umi.jpg" width="326">
+          <h3>예고편</h3>
+          <video src="videos/1.mp4" width="326" height="230" controls autoplay style="background-color: black;"></video>
+        </section>
+        <section id="s6" style="height:81%;">
+          <h3>언어의 정원</h3>
+          <img src="images/niwa.jpg" width="326" height="436">
+          <h3>예고편</h3>
+          <video src="videos/2.mp4" width="326" height="230" controls autoplay style="background-color: black;"></video>
+        </section>
+        <section id="s7" style="height:81%;">
+          <h3>명탐정코난</h3>
+          <img src="images/conan.jpg" width="326" height="436">
+          <h3>예고편</h3>
+          <video src="videos/3.mp4" width="326" height="230" controls autoplay style="background-color: black;"></video>
+        </section>
+        <br>
+        <h3 style="margin-left: 1050px;margin-top : -5px;">Netflix 이용약관</h3>
+        <ul>
+          <li style="margin-left: 1070px; margin-right : 35px;text-align : justify;">Netflix는 인터넷 연결 지원 TV, 컴퓨터 및 기타 디바이스('Netflix 지원 디바이스')에서 인터넷을 통해 회원에게 엔터테인먼트 콘텐츠('Netflix 콘텐츠')를 제공하는 맞춤형 구독 서비스입니다.</li><br>
+          <li style="margin-left: 1070px; margin-right : 35px;text-align : justify;">본 이용 약관은 사용자가 Netflix 서비스를 이용하는 데 적용됩니다. 본 이용 약관에 언급되는 'Netflix 서비스' 또는 '당사 서비스'는 모든 특성과 기능, 추천 콘텐츠와 후기, Netflix 웹사이트 및 사용자 인터페이스뿐만 아니라 Netflix 서비스와 관련된 모든 콘텐츠와 소프트웨어를 포함하는 Netflix 콘텐츠의 검색 및 이용을 위해 Netflix가 제공하는 개인 맞춤형 서비스를 의미합니다.</li><br>
+          <li style="margin-left: 1070px; margin-right : 35px;text-align : justify;">Netflix에서 특별 프로모션 또는 프로모션 멤버십('프로모션')을 제공하는 경우가 있습니다. 프로모션 이용 자격은 Netflix의 단독 재량에 따라 결정되며, Netflix는 회원이 해당 자격을 갖추지 않은 것으로 확인될 경우 프로모션 제공을 철회하고 계정을 보류 조치할 권리를 보유합니다. 기존 Netflix 멤버십을 보유하고 있거나 최근에 가입한 가구의 구성원에게는 특정 신규 프로모션의 이용 자격이 주어지지 않을 수도 있습니다. Netflix는 기존에 사용 중이거나 최근 가입 시 사용한 디바이스 ID, 결제의 수단, 계정 이메일 주소 등과 같은 정보를 프로모션 이용 자격 판단에 활용할 수 있습니다. 자격 요건 및 기타 제한 사항과 조건은 프로모션 신청 시 또는 회원이 사용할 수 있는 기타 커뮤니케이션을 통해 공개됩니다.</li>
+        </ul>
+      </article>
+    </div>
+  </body>
+</html>
